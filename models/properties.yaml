@@ -1,0 +1,18 @@
+version: 2
+
+sources: 
+  - name: db_obj_snf
+    database: DEV
+    schema: raw
+    tables:
+      - name: NSE_BLOCK_DEALS
+models:
+  - name: nse_block_data
+    columns: 
+      - name: SYMBOL
+        tests:
+            - nse_block_data_val
+            
+
+
+    
