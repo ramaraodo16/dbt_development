@@ -1,0 +1,1 @@
+SELECT * FROM {{ ref('dbt_artifacts', 'model_timing') }}
